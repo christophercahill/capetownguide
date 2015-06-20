@@ -1,0 +1,9 @@
+<h1> <%= @place %> </h1>
+
+<ul>
+ <% @places.each do |place| %>
+	<li> <a href="/places/<%= place %>"><%= place %></a></li>
+	<% end %>
+</ul>
+
+<p> <a href="/">Index</a>
