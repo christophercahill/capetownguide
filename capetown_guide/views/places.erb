@@ -1,0 +1,87 @@
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<style>
+h1 {
+	 font-size: 55px;
+     font-family: 'Lato', sans-serif;
+     font-weight: 400;
+     color: white;
+     margin: 0 0 0 0;
+}
+
+h2 {
+	 font-size: 30px;
+     font-family: 'Lato', sans-serif;
+     font-weight: 400;
+     color: white;
+          margin: 0 0 0 0;
+
+}
+ul{
+		list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding: 50px;
+	font-size: 35px;
+}
+
+div { 
+	height: 100px;
+	background: #B0C4DE;
+	background-size: cover;
+	margin: 40px 0 0 0; 
+	border-radius: 20px;
+	opacity: .85;
+}
+body { 
+	text-align: center;
+	background-image: url("http://www.travelstart.co.za/blog/wp-content/uploads/2013/11/Greg-Lumley.jpg");
+	background-size: cover;
+}
+a {
+		font-family: 'Lato', sans-serif;
+      font-weight: 400;
+	  font-size: 35px;
+	  color: white;
+	      text-decoration: none;
+
+}
+</style>
+
+<body> 
+<h1> Tourist Attractions in Cape Town </h1>
+<h2> Click on any of the links below to find out more about each destination </h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div> 
+	<ul>
+		<br><br>
+		<% @places.each do |place| %>
+		<li> <a href="/places/<%= @places_url[place] %>"><%= place %></a></li>
+		<% end %>
+		<br>
+	</ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="/">Home</a></li>
+</body>
+
